@@ -150,10 +150,6 @@ The project uses the Programming Hero API for news data:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
 ## Acknowledgments
 
 - [Programming Hero](https://www.programming-hero.com/) for the News API
