@@ -138,9 +138,9 @@ Dargon-News/
 ## API Integration
 
 The project uses the Programming Hero API for news data:
-- Categories: `https://openapi.programming-hero.com/api/news/categories`
-- Category News: `https://openapi.programming-hero.com/api/news/category/${categoryId}`
-- News Details: `https://openapi.programming-hero.com/api/news/${newsId}`
+- Categories: [](`https://openapi.programming-hero.com/api/news/categories`)
+- Category News: [](`https://openapi.programming-hero.com/api/news/category/${categoryId}`)
+- News Details: [](`https://openapi.programming-hero.com/api/news/${newsId}`)
 
 ## Contributing
 
