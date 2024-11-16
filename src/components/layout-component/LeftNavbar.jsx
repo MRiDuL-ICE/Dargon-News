@@ -10,7 +10,7 @@ const LeftNavbar = () => {
         .then(data => setCategories(data.data.news_category))
     },[])
 
-    console.log(categories);
+    // console.log(categories);
 
     return (
         <div>

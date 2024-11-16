@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaEye, FaStar, FaFireAlt, FaChevronDown, FaChevronUp, FaBookmark, FaShareAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -71,12 +72,11 @@ const NewsCard = ({ news }) => {
           <p className={`text-gray-600 leading-relaxed ${isExpanded ? '' : 'line-clamp-3'}`}>
             {details}
           </p>
-          <button 
-            onClick={() => setIsExpanded(!isExpanded)}
+          <Link to={`/news/${news._id}`}
             className="text-orange-500 hover:text-orange-600 mt-2"
           >
             Read More
-          </button>
+          </Link>
         </div>
 
         {/* Stats */}
