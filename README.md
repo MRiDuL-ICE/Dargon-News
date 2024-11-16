@@ -54,12 +54,12 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/daily-dragon-news.git
+git clone https://github.com/MRiDuL-ICE/Dargon-News.git
 ```
 
 2. Navigate to the project directory
 ```bash
-cd daily-dragon-news
+cd Dargon-News
 ```
 
 3. Install dependencies
@@ -85,16 +85,33 @@ yarn dev
 ## Project Structure
 
 ```
-daily-dragon-news/
+Dargon-News/
 ├── src/
 │   ├── assets/              # Static assets
 │   ├── components/          # Reusable components
+│   │   ├── layout-component/# Layout specific components
+│   │   ├── Header.jsx
+│   │   ├── LatestNews.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── NewsCard.jsx
+│   │   ├── FindUs.jsx
+│   │   └── SocialLogin.jsx
 │   ├── layout/             # Layout components
+│   │   ├── AuthLayout.jsx
+│   │   └── HomeLayout.jsx
 │   ├── pages/              # Page components
+│   │   ├── CategoryNews.jsx
+│   │   ├── Loading.jsx
+│   │   ├── Login.jsx
+│   │   ├── NewsDetails.jsx
+│   │   └── Register.jsx
 │   ├── provider/           # Context providers
+│   │   └── AuthProvider.jsx
 │   ├── firebase/           # Firebase configuration
+│   │   └── firebase.init.js
 │   └── routes/             # Route configurations
-├── public/                 # Public assets
+│       ├── PrivateRoute.jsx
+│       └── router.jsx
 └── package.json           # Project dependencies
 ```
 
@@ -105,11 +122,13 @@ daily-dragon-news/
 - `AuthLayout`: Authentication pages layout
 
 ### Components
-- `NewsCard`: Displays individual news articles
-- `LeftNavbar`: Category navigation
-- `RightNavbar`: Social links and additional features
-- `Header`: Site header with logo and date
-- `LatestNews`: Breaking news ticker
+- `NewsCard`: Displays individual news articles with author info, rating, and views
+- `LeftNavbar`: Category-based navigation sidebar
+- `RightNavbar`: Social login and social media links
+- `Header`: Site logo and current date/time display
+- `LatestNews`: Marquee news ticker for breaking news
+- `FindUs`: Social media connection links
+- `SocialLogin`: Google and GitHub login options
 
 ### Authentication
 - `AuthProvider`: Manages authentication state
@@ -119,9 +138,9 @@ daily-dragon-news/
 ## API Integration
 
 The project uses the Programming Hero API for news data:
-- Categories: `https://openapi.programming-hero.com/api/news/categories`
-- Category News: `https://openapi.programming-hero.com/api/news/category/${categoryId}`
-- News Details: `https://openapi.programming-hero.com/api/news/${newsId}`
+- Categories: [](`https://openapi.programming-hero.com/api/news/categories`)
+- Category News: [](`https://openapi.programming-hero.com/api/news/category/${categoryId}`)
+- News Details: [](`https://openapi.programming-hero.com/api/news/${newsId}`)
 
 ## Contributing
 
@@ -137,9 +156,15 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Acknowledgments
 
-- [Programming Hero](https://www.programming-hero.com/) for the API
-- [Firebase](https://firebase.google.com/) for authentication
-- All contributors who have helped this project grow
+- [Programming Hero](https://www.programming-hero.com/) for the News API
+- [Firebase](https://firebase.google.com/) for authentication services
+- [Netlify](https://www.netlify.com/) for hosting
+
+## Contact
+
+MRiDuL-ICE - [GitHub Profile](https://github.com/MRiDuL-ICE)
+
+Project Link: [https://github.com/MRiDuL-ICE/Dargon-News](https://github.com/MRiDuL-ICE/Dargon-News)
 
 
 Project Link: [Dargon News](https://dailydragonnews.netlify.app/)
